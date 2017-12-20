@@ -151,7 +151,7 @@ void I2CB_Init(void)
 	EALLOW;
 	// TURN ON THE I2CB CLOCK
 	CpuSysRegs.PCLKCR9.bit.I2C_B = 1;
-	PieVectTable.I2CB_INT = &i2cBISR;
+	//PieVectTable.I2CB_INT = &i2cBISR;
 	EDIS;
 
 
